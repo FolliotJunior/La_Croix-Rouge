@@ -1,4 +1,40 @@
+.info .titre_general{
+    margin-top: 50px;
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #E3001B;
+    left: 20px;
+}
+
+.info .sep_cr_gen{
+    position: relative;
+    width: 50%;
+    left: calc(20px - 25%);
+    border: none;
+    height: 3px;
+    border-radius: 8px;
+    background-color: #818181;
+    transition: background-color 0.5s;
+}
+
+.info .sep_cr_gen:hover{
+    background-color: #E3001B;
+
+}
+
+
 @media (max-width: 799px){
+
+    .info .titre_general{
+        top: -150px;
+    }
+    
+    .info .sep_cr_gen{
+        top: -175px;
+    }
+    
     .info{
         display: flex;
         flex-direction: column;
@@ -48,6 +84,14 @@
 }
 
 @media (min-width: 800px){
+    .info .titre_general{
+        top: -100px;
+    }
+    
+    .info .sep_cr_gen{
+        top: -115px;
+    }
+
     .info{
         margin-top: 127px;
     }
