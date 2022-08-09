@@ -15,7 +15,7 @@
     border: none;
     height: 3px;
     border-radius: 8px;
-    background-color: #818181;
+    background-color: #c9c9c9;
     top: -20px;
     transition: background-color 0.5s;
 }
@@ -52,7 +52,7 @@
 }
 
 
-@media(max-width: 799px){
+@media (max-width: 799px){
 
     .nos_actions .par{
         justify-content: center;
@@ -71,7 +71,7 @@
 
 
 
-@media(min-width: 800px){
+@media (min-width: 800px){
     .nos_actions .par img{
         opacity: 0.5;
         margin-left: 3%;
