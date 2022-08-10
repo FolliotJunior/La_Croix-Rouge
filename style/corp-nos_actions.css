@@ -68,12 +68,18 @@
         color: #E3001B;
         text-align: center;
         font-weight: 600;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
         left: 0;
         right: 0;
         text-align: center;
-        margin-top: 0px;
+        /* margin-top: 0px; */
+    }
+
+    .nos_actions .par .une_chaine{
+        margin-top: -40px;
+    }
+    .nos_actions .par .urgence_et_secourisme{
+        margin-top: -20px;
     }
     
     .nos_actions hr{
