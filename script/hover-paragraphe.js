@@ -1,7 +1,7 @@
 var paragraphe = document.getElementsByClassName("texte");
 var bloc = document.getElementsByClassName("bloc");
 var list_bloc = [];
-var bloc_clicked = 0
+var bloc_clicked = 0;
 
 for(let i=0;i< paragraphe.length; i++){
     paragraphe[i].setAttribute("id", String(i));
@@ -50,7 +50,6 @@ function test(n){
                 document.getElementById(String(i)).style.display = "none";
             }else{
                 document.getElementById(String(i)).style.display = "block";
-                document.getElementById(String(i)).style.marginBottom = "35%";
             }
         }
     }

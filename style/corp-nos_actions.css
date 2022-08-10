@@ -58,11 +58,30 @@
         justify-content: center;
         align-items: center;
     }
-    .nos_actions .txt{
+    .nos_actions .description{
         display: none;
     }
+    .nos_actions .par .titre{
+        position: absolute;
+        font-size: 20px;
+        width: 200px;
+        color: #E3001B;
+        text-align: center;
+        font-weight: 600;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin-top: 0px;
+    }
+    
     .nos_actions hr{
         width: 60%;
+    }
+
+    .nos_actions .par img{
+        opacity: 0.5;
     }
 }
 

@@ -11,21 +11,46 @@ window.addEventListener("resize", function(e){
 
     corp.style.height = String(taille_final) + "px";
 
-})
+});
 
 
 
 var open_menu_t = document.getElementsByClassName("t-barres");
 var close_menu_x = document.getElementsByClassName("close_menu");
 var menu = document.getElementsByClassName("menu_option");
+var b = document.getElementsByClassName("bas");
 var re = 0;
-open_menu = function (){
+var menu_clicked = 0;
+
+function open_menu(){
     close_menu_x[0].style.display = "block";
     open_menu_t[0].style.display = "none";
     menu[0].style.display = "flex";
+    menu_clicked = 1;
+
 }
 
-close_menu = function (){
+
+corp.addEventListener("mousedown", function(e){
+    if(window.innerWidth <= 499 && menu_clicked == 0){
+        close_menu();
+    }
+    
+});
+
+b[0].addEventListener("mousedown", function(e){
+    if(window.innerWidth <= 499 && menu_clicked == 0){
+        close_menu();
+    }
+    
+});
+
+window.addEventListener("mousemove", function(e){
+    menu_clicked = 0;
+});
+
+
+function close_menu(){
     close_menu_x[0].style.display = "none";
     open_menu_t[0].style.display = "block";
     menu[0].style.display = "none";
@@ -45,5 +70,11 @@ window.addEventListener("resize", function(e){
         menu[0].style.display = "none";
     }
     
-})
+});
+
+
+function redirect(url){
+    document.location.href=url; 
+}
+
 
