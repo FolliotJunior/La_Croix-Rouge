@@ -25,7 +25,7 @@ window.addEventListener("resize",function(e){
             document.getElementById(String(i)).style.display = "block";
         }
         if(window.innerWidth <= 799){
-            document.getElementById(String(i)).style.display = "none";
+            document.getElementById(String(i)).style.display = "inline";
         }
         if(window.innerWidth <= 799){
 
